@@ -13,6 +13,10 @@ You will:
 
 #### Challenges
 
+Challenges should be done _in order_, many of them build upon each other. 
+
+In addition to familiarizing you with classic data structures, each data structure has a set of required, standard operations. Implementing these operations will provide practice with classic algorithms.
+
 Data Structures:
 
  1. [Fixed Arrays](../../../data-structures-fixed-array-challenge)
