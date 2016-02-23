@@ -28,10 +28,10 @@ Data Structures:
  *  [Linked Lists](../../../data-structures-linked-list-challenge)
  *  [Stacks](../../../data-structures-stack-challenge)
  *  [Queues](../../../data-structures-queue-challenge)
- *  [Sets](../../../data-structures-set-challenge)
  *  [Trees](../../../data-structures-tree-challenge)
- *  [Maps](../../../data-structures-maps-challenge)
  *  [Graphs](../../../data-structures-graph-challenge)
+ *  [Maps](../../../data-structures-maps-challenge)
+ *  [Sets](../../../data-structures-set-challenge)
  *  [Hashes](../../../data-structures-hash-challenge)
 
 Recommended Stretch:
