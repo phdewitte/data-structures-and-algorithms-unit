@@ -17,6 +17,10 @@ Challenges should be done _in order_, many of them build upon each other. You sh
 
 In addition to familiarizing you with classic data structures, each data structure has a set of required, standard operations. Implementing these operations will provide practice with classic algorithms.
 
+#### Stretches
+
+Once you finish the challenges, return to any stretches you haven't completed and get to work. Many of the stretches represent the kinds of the problems you might see in a heavily technical interview.
+
 Data Structures:
 
  1. [Fixed Arrays](../../../data-structures-fixed-array-challenge)
