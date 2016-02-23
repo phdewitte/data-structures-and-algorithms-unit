@@ -29,5 +29,8 @@ Data Structures:
  *  [Maps](../../../data-structures-maps-challenge)
  *  [Graphs](../../../data-structures-graph-challenge)
  *  [Hashes](../../../data-structures-hash-challenge)
+
+Recommended Stretch:
+
  *  [Maze Solver Challenge](../../../maze-solver-challenge)
  *  [A* Challenge](../../../a-star-challenge)
