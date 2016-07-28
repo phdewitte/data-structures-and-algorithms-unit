@@ -1,5 +1,7 @@
 class FixedArray
 
+	attr_reader :array
+
 	def initialize(size)
 		@array = self.new(size)
 	end
@@ -30,6 +32,6 @@ class OutOfBoundsException < StandardError
 	end
 end
 
-p array = FixedArray.new
-p three = array.get(1)
-p updated = array.set(2, "Hello.")
+# p array = FixedArray.new(3)
+# p three = array.get(1)
+# p updated = array.set(2, "Hello.")
