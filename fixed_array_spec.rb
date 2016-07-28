@@ -33,7 +33,16 @@ describe 'FixedArray' do
   end
 
   context '#set' do
+    before(:example) do
+      fixed_array.set(1,"nope!")
+    end
+    it 'inserts a value at a specified index' do
+      expect(array[1]).to eq 'nope!'
+    end
 
+    it 'raises an OutOfBoundsError if a non-existent index is given' do
+      expect { fixed_array.set(9, "I'll break!") }.to raise_error(OutOfBoundsException)
+    end
   end
 
 end
