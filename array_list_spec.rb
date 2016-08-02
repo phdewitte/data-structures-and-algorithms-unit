@@ -4,7 +4,7 @@ describe "ArrayList" do
   let(:array_list) { ArrayList.new(5) }
   let(:array) { array_list.array }
 
-  context "new" do
+  context "#new" do
     it "initializes a new instance with a readable array" do
       expect(array).to be_an Array
     end
@@ -14,7 +14,7 @@ describe "ArrayList" do
     end
   end
 
-  context "add" do
+  context "#add" do
     it "adds an element to the array list" do
       expect { array_list.add("add one") }.to change{array.length}.by(1)
     end
@@ -29,7 +29,7 @@ describe "ArrayList" do
     end
   end
 
-  context "get" do
+  context "#get" do
     before(:example) do
       array.replace(['hi', 'I\'m', 'just', 'killing', nil, 'time'])
     end

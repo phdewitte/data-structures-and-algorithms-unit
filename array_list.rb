@@ -21,7 +21,9 @@ class ArrayList
   end
 
   def oob_throw(index)
-    raise OutOfBoundsException unless index < @array.length
+    unless index < @array.length && @array[index] != nil
+      raise OutOfBoundsException
+    end
   end
 
 end
