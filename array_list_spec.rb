@@ -30,7 +30,17 @@ describe "ArrayList" do
   end
 
   context "get" do
+    before(:example) do
+      array.replace(['hi', 'I\'m', 'just', 'killing', 'time'])
+    end
 
+    it "retrieves an element at a given index within bounds of array size" do
+      expect(array_list.get(2)).to eq 'just'
+    end
+
+    it "throws an OutOfBoundsException if the index is outside the array size" do
+      expect { array_list.get(8) }.to raise_error(OutOfBoundsException)
+    end
   end
 
 end

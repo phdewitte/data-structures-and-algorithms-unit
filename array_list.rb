@@ -15,7 +15,10 @@ class ArrayList
     element
   end
 
-
+  def get(index)
+    oob_throw(index)
+    @array[index]
+  end
 
   def oob_throw(index)
     raise OutOfBoundsException unless index < @array.length
