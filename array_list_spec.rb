@@ -66,4 +66,14 @@ describe "ArrayList" do
     end
   end
 
+  context "#length" do
+    it "does not count the number of nil elements" do
+      expect(array_list.length).to be 0
+    end
+
+    it "only counts non-nil elements within the array list" do
+      array.replace([nil, "hi", nil, nil, "hello"])
+      expect(array_list.length).to eq 2
+    end
+  end
 end
