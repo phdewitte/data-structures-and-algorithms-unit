@@ -15,13 +15,22 @@ describe "ArrayList" do
   end
 
   context "add" do
-    it "adds an element to the end of the array list" do
-      expect { array.add("end") }.to change{array.length}.by(1)
+    it "adds an element to the array list" do
+      expect { array_list.add("add one") }.to change{array.length}.by(1)
+    end
+
+    it "adds the new element to the end of the array list" do
+      array_list.add("I'm last")
+      expect(array.last).to eq "I'm last"
     end
 
     it "returns the newly added element" do
-      expect(array.add("I'm last")).to be "I'm last"
+      expect(array_list.add("Return me")).to eq "Return me"
     end
+  end
+
+  context "get" do
+
   end
 
 end
