@@ -30,7 +30,7 @@ describe "ArrayList" do
   end
 
   context "#get" do
-    before(:example) do
+    before(:each) do
       array.replace(['hi', 'I\'m', 'just', 'killing', nil, 'time'])
     end
 
@@ -44,6 +44,25 @@ describe "ArrayList" do
 
     it "throws an OutOfBoundsException if the index is nil" do
       expect { array_list.get(4) }.to raise_error(OutOfBoundsException)
+    end
+  end
+
+  context "#set" do
+    before(:each) do
+      array.replace(['hi', 'I\'m', 'just', 'killing', nil, 'time'])
+    end
+
+    it "replaces an existing element at an index with a new element" do
+      array_list.set(3, "burning")
+      expect(array[3]).to eq "burning"
+    end
+
+    it "returns the newly inserted element" do
+      expect(array_list.set(3, "wasting")).to eq "wasting"
+    end
+
+    it "throws an OutOfBoundsException if no element exists at that index" do
+      expect { array_list.set(4, "kabong") }.to raise_error(OutOfBoundsException)
     end
   end
 

@@ -20,10 +20,14 @@ class ArrayList
     @array[index]
   end
 
+  def set(index, element)
+    oob_throw(index)
+    @array[index] = element
+    element
+  end
+
   def oob_throw(index)
-    unless index < @array.length && @array[index] != nil
-      raise OutOfBoundsException
-    end
+    raise OutOfBoundsException unless index < @array.length && @array[index] != nil
   end
 
 end
