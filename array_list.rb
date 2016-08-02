@@ -30,6 +30,10 @@ class ArrayList
     @array.select {|element| element != nil}.size
   end
 
+  def insert(index, element)
+    #TODO
+  end
+
   def oob_throw(index)
     raise OutOfBoundsException unless index < @array.length && @array[index] != nil
   end

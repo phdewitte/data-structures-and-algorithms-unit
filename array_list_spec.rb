@@ -76,4 +76,20 @@ describe "ArrayList" do
       expect(array_list.length).to eq 2
     end
   end
+
+  context "#insert" do
+    it "increases the size of the array list" do
+      expect { array_list.insert(2, "bingo") }.to change{array.size}.by 1
+    end
+
+    it "adds an element at a given position" do
+      array_list.insert(2, "bingo")
+      p array
+      expect(array[2]).to eq "bingo"
+    end
+
+    it "throws an OutOfBoundsException if no element exists at that index" do
+      expect { array_list.insert(0, "kabong") }.to raise_error(OutOfBoundsException)
+    end
+  end
 end
