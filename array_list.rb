@@ -30,8 +30,14 @@ class ArrayList
     @array.select {|element| element != nil}.size
   end
 
+  # acceptable method given data structure constraints?
   def insert(index, element)
-    #TODO
+    oob_throw(index)
+    if index == 0
+      @array = [element] + @array[index + 1..-1]
+    else
+      @array = @array[0..index-1] + [element] + @array[index..-1]
+    end
   end
 
   def oob_throw(index)

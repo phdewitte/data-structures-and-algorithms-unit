@@ -78,17 +78,21 @@ describe "ArrayList" do
   end
 
   context "#insert" do
+    before(:each) do
+      array.replace(['one', 'two', 'three', 'four', 'five'])
+    end
+
     it "increases the size of the array list" do
-      expect { array_list.insert(2, "bingo") }.to change{array.size}.by 1
+      expect { array_list.insert(2, "bingo") }.to change{array_list.array.size}
     end
 
     it "adds an element at a given position" do
       array_list.insert(2, "bingo")
-      p array
-      expect(array[2]).to eq "bingo"
+      expect(array_list.array[2]).to eq "bingo"
     end
 
     it "throws an OutOfBoundsException if no element exists at that index" do
+      array_list.insert(0, nil)
       expect { array_list.insert(0, "kabong") }.to raise_error(OutOfBoundsException)
     end
   end
