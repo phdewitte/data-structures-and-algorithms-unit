@@ -11,6 +11,7 @@ class Node
   end
 
   def insert_after(other_node)
+    @node.next = self.new(other_node)
   end
 
   def remove_after
