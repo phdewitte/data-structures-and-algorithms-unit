@@ -1,6 +1,7 @@
 require_relative 'node'
 
 class LinkedList
+
   attr_reader :head
 
   def initialize
@@ -8,7 +9,7 @@ class LinkedList
   end
 
   def new
-    @head = Node.new(nil)
+    @head = nil
   end
 
   def insert_first(element)
