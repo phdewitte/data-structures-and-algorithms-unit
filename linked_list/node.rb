@@ -3,12 +3,11 @@ class Node
   attr_reader :element, :next
 
   def initialize(element)
-    @element = self.new(element)
-    @next = nil
+    self.new(element)
   end
 
   def new(element)
-    element
+    @element = element
   end
 
   def insert_after(other_node)
