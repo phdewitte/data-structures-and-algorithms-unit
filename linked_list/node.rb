@@ -1,19 +1,20 @@
 class Node
 
-  attr_reader :node
+  attr_reader :element, :next
 
   def initialize(element)
-    @node = self.new(element)
+    self.new(element)
   end
 
   def new(element)
-    element
+    @element = element
   end
 
   def insert_after(other_node)
-    @node.next = self.new(other_node)
+    @next = other_node
   end
 
   def remove_after
+    @next = nil
   end
 end
